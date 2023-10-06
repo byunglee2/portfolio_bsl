@@ -392,3 +392,38 @@ button:focus {
   height: 2px;
   background-color: var(--color-accent);
 }
+
+/* Testimonial */
+.testimonials {
+  margin: 3rem;
+}
+
+.testimonial {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.testimonial:nth-child(even) .testimonial__img {
+  order: 1; /* testimonial의 짝수 자식 위치 설정. 0 으로 하면 왼쪽으로 이동.*/
+}
+
+.testimonial__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38); /* 이거 그림자박스 */
+}
+
+.testimonial__bubble {
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38); /* 이거 그림자박스 */
+}
+
+.testimonial__bubble__name {
+  color: var(--color-accent);
+  font-weight: bold;
+  filter: brightness(70%);
+}
