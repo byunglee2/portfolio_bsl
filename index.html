@@ -225,28 +225,28 @@
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
-                All <span class="category__count">8</span>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">5</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Front-End <span class="category__count">3</span>
+              <button class="category" data-category="software">
+                Software <span class="category__count">1</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Back-End <span class="category__count">3</span>
+              <button class="category" data-category="full-stack">
+                Full-Stack <span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Mobile <span class="category__count">2</span>
+              <button class="category" data-category="mobile">
+                Mobile <span class="category__count">1</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="software">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project1.webp"
@@ -259,7 +259,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="full-stack">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project2.webp"
@@ -272,7 +272,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="full-stack">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project3.webp"
@@ -281,7 +281,33 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #3</h3>
+                  <p>Personal Portfolio Website</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="Mobile">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project4.webp"
+                  alt="project4"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #4</h3>
                   <p>Jumping Drago</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="full-stack">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project5.webp"
+                  alt="project5"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #5</h3>
+                  <p>Music Recommendation Platform</p>
                 </div>
               </a>
             </li>
@@ -310,6 +336,7 @@
                 <a
                   href="https://www.rbc.edu/why-rbc/faculty-staff/faculty/bio/dr-david-morgan/"
                   target="_blank"
+                  title="Click to see the profile"
                   class="testimonial__bubble__name"
                   >Dr. David Morgan</a
                 >
@@ -335,6 +362,7 @@
                 <a
                   href="https://www.rbc.edu/why-rbc/faculty-staff/faculty/bio/robert-maher-2/"
                   target="_blank"
+                  title="Click to see the profile"
                   class="testimonial__bubble__name"
                   >Robert Maher</a
                 >
@@ -359,6 +387,7 @@
                 <a
                   href="https://www.rbc.edu/why-rbc/faculty-staff/faculty/bio/jason-pode/"
                   target="_blank"
+                  title="Click to see the profile"
                   class="testimonial__bubble__name"
                   >Jason Pode</a
                 >
@@ -383,6 +412,7 @@
                 <a
                   href="https://www.instagram.com/sherman.the.campus.cat/"
                   target="_blank"
+                  title="Click to see the profile"
                   class="testimonial__bubble__name"
                   >Sherman</a
                 >
@@ -405,17 +435,32 @@
     <footer id="contact" class="section">
       <div class="max-container">
         <h2 class="title">Let&#39;s Talk !</h2>
-        <p class="description">
-          <i class="fa-solid fa-envelope"></i> blee264800@gmail.com
-        </p>
+        <!-- <p class="description">
+          <a
+            class="contact__link"
+            title="Click to send an Email"
+            href="mailto:blee264800@gmail.com"
+          > 
+            <i class="fa-solid fa-envelope"></i> blee264800@gmail.com</a
+          >
+        </p> -->
         <ul class="contact__links">
-          <li>
+          <!-- <li>
             <a
               class="contact__link"
               href="https://github.com/8oi4rom5eoul"
               target="_blank"
               title="My github link"
               ><i class="fa-brands fa-square-github"></i>
+            </a>
+          </li> -->
+          <li>
+            <a
+              class="contact__link"
+              title="Click to send an Email"
+              href="mailto:blee264800@gmail.com"
+            >
+              <i class="fa-solid fa-envelope"></i>
             </a>
           </li>
           <li>
@@ -428,7 +473,9 @@
             ></a>
           </li>
         </ul>
-        <p>Copyright©️2023 All Rights Reserved by Byung Seok Lee</p>
+        <p class="copyright">
+          Copyright©️2023 All Rights Reserved by Byung Seok Lee
+        </p>
       </div>
     </footer>
   </body>
