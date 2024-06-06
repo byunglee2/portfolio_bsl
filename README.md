@@ -1,2 +1,2 @@
 # portfolio_bsl
- 포트폴리오 웹사이트
+Byung Seok Lee's Portfolio Website
